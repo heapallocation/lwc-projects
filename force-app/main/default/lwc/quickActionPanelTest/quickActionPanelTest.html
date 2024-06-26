@@ -1,0 +1,21 @@
+<!-- myModal.html -->
+<template>
+  <lightning-quick-action-panel title="Confirmation" onclose={handleClose}>
+    <header
+      class="slds-modal__header slds-theme_alert-texture slds-theme_default large-font"
+    >
+      <h1 class="slds-modal__title">Are you sure you want to proceed?</h1>
+    </header>
+    <footer class="slds-modal__footer">
+      <lightning-button
+        label="Cancel"
+        onclick={handleCancel}
+      ></lightning-button>
+      <lightning-button
+        variant="brand"
+        label="OK"
+        onclick={handleOk}
+      ></lightning-button>
+    </footer>
+  </lightning-quick-action-panel>
+</template>
