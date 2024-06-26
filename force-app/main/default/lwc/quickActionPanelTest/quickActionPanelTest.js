@@ -1,16 +1,23 @@
 // myModal.js
-import { LightningElement } from "lwc";
+import { LightningElement, api } from "lwc";
 
 export default class MyModal extends LightningElement {
+  @api headerText;
+  @api ok;
+  @api cancel;
+  @api esult;
+
   handleOk() {
-    // Handle the 'OK' button click
+    this.result = true;
+    console.log("result is", this.result);
   }
 
   handleCancel() {
-    // Handle the 'Cancel' button click
+    this.result = false;
+    console.log("result is", this.result);
   }
 
   handleClose() {
-    // Handle the close event
+    this.result = false;
   }
 }
