@@ -5,7 +5,7 @@ export default class MyModal extends LightningElement {
   @api headerText;
   @api ok;
   @api cancel;
-  @api esult;
+  @api result;
 
   handleOk() {
     this.result = true;
