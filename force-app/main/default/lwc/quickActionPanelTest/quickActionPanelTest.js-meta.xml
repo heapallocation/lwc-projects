@@ -4,5 +4,32 @@
     <isExposed>true</isExposed>
     <targets>
         <target>lightning__AppPage</target>
+        <target>lightning__FlowScreen</target>
     </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property
+        name="headerText"
+        type="String"
+        label="Header text"
+        required="true"
+        role="inputOnly"
+      />
+            <property
+        name="ok"
+        type="String"
+        label="OK button text"
+        required="true"
+        role="inputOnly"
+      />
+        <property
+        name="cancel"
+        type="String"
+        label="Cancel button text"
+        required="true"
+        role="inputOnly"
+      />
+      <property name="result" type="Boolean" label="result" role="outputOnly" />
+        </targetConfig>
+    </targetConfigs>
 </LightningComponentBundle>

@@ -4,18 +4,16 @@
     <header
       class="slds-modal__header slds-theme_alert-texture slds-theme_default large-font"
     >
-      <h1 class="slds-modal__title">
-        Are you sure you want to revoke this feature assignment?
-      </h1>
+      <h1 class="slds-modal__title">{headerText}</h1>
     </header>
     <footer class="slds-modal__footer slds-align_absolute-center">
       <lightning-button
-        label="Cancel"
+        label={cancel}
         onclick={handleCancel}
       ></lightning-button>
       <lightning-button
         variant="brand"
-        label="OK"
+        label={ok}
         onclick={handleOk}
       ></lightning-button>
     </footer>
