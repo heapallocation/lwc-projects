@@ -1,5 +1,5 @@
 <template>
-  <div style="background-color: lightblue">
+  <div style="background-color: lightblue" class="slds-theme_alert-texture">
     <lightning-layout horizontal-align="space">
       <lightning-layout-item padding="around-small">
         <lightning-icon
@@ -7,9 +7,7 @@
           alternative-text="Warning"
           title="Warning"
         ></lightning-icon>
-        <lightning-formatted-text
-          value="this is a test"
-        ></lightning-formatted-text>
+        <lightning-formatted-text value={message}></lightning-formatted-text>
       </lightning-layout-item>
     </lightning-layout>
   </div>
