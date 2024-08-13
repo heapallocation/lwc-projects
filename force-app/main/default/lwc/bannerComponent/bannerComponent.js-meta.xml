@@ -12,5 +12,7 @@
         type="String"
         label="Header text"
         required="true"
-        role="inputOnly"
       />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
