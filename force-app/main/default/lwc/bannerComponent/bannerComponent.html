@@ -1,14 +1,25 @@
 <template>
-  <div style="background-color: #ffd580" class="slds-theme_alert-texture">
-    <lightning-layout horizontal-align="space">
-      <lightning-layout-item padding="around-small">
-        <lightning-icon
-          icon-name="utility:warning"
-          alternative-text="Warning"
-          title="Warning"
-        ></lightning-icon>
-        <lightning-formatted-text value={message}></lightning-formatted-text>
-      </lightning-layout-item>
-    </lightning-layout>
+  <div class="banner slds-theme_alert-texture slds-grid">
+    <div class="slds-col slds-grow-none slds-p-around_small">
+      <lightning-icon
+        icon-name="utility:warning"
+        alternative-text="Warning"
+        title="Warning"
+      ></lightning-icon>
+    </div>
+    <div class="slds-col slds-grow-none slds-p-around_small">
+      <div class="slds-grid slds-grid_vertical">
+        <div class="slds-col">
+          <lightning-formatted-text
+            class="bold-text"
+            value={headerText}
+          ></lightning-formatted-text>
+        </div>
+        <div class="slds-col">
+          <lightning-formatted-text value={message}></lightning-formatted-text>
+        </div>
+      </div>
+    </div>
+    <div class="slds-col_bump-left slds-grow-none"></div>
   </div>
 </template>
