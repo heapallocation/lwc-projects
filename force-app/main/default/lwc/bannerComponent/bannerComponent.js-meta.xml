@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>61.0</apiVersion>
-    <isExposed>true</isExposed>
-    <targets>
-        <target>lightning__RecordPage</target>
-    </targets>
-    <targetConfigs>
-        <targetConfig targets="lightning__RecordPage">
+   <apiVersion>61.0</apiVersion>
+   <isExposed>true</isExposed>
+   <targets>
+       <target>lightning__RecordPage</target>
+   </targets>
+   <targetConfigs>
+       <targetConfig targets="lightning__RecordPage">
+           <property
+        name="headerText"
+        type="String"
+        label="Header text"
+        description="Set the header text of the banner"
+      />
             <property
         name="message"
         type="String"
-        label="Header text"
-        required="true"
+        label="Message"
+        description="Set the message text of the banner"
       />
-        </targetConfig>
-    </targetConfigs>
+            <property
+        name="bannerColor"
+        type="String"
+        label="Banner Color"
+        description="Set the background color of the banner"
+      />
+       </targetConfig>
+   </targetConfigs>
 </LightningComponentBundle>
