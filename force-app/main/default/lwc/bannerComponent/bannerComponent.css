@@ -1,0 +1,14 @@
+.banner {
+  background-color: #ffd580;
+  border-radius: 5px;
+  border-color: lightgrey;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
