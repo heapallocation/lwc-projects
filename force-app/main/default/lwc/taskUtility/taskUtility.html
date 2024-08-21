@@ -1,1 +1,21 @@
-<template> </template>
+<template>
+  <lightning-card title="Create Task">
+    <div class="slds-m-around_medium">
+      <lightning-input
+        label="Contact or Lead ID"
+        value={whoId}
+        onchange={handleWhoIdChange}
+      ></lightning-input>
+      <lightning-input
+        label="Account or Opportunity ID"
+        value={whatId}
+        onchange={handleWhatIdChange}
+      ></lightning-input>
+      <lightning-button
+        label="Create Task"
+        onclick={handleCreateTask}
+        class="slds-m-top_medium"
+      ></lightning-button>
+    </div>
+  </lightning-card>
+</template>
